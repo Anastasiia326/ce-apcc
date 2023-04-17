@@ -2,7 +2,7 @@ import AfricaMap from "../../../assets/images/Africa.png";
 
 function OurAim() {
   return (
-    <div className="our-aim container mx-auto px-4">
+    <div className="our-aim container mx-auto px-4 mb-16 lg:mb-32 ">
       <div className="block xl:flex items-center rounded-xl bg-[#1BAE70] my-14">
         <div className="africa-map w-full md:w-[400px] h-full md:h-[450px] relative float-none md:float-left mx-auto">
           <img src={AfricaMap} alt="Africa Map" className="w-full h-full" />
