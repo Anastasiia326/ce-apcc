@@ -1,8 +1,6 @@
 # React App for the OASIS
 
-This is the OASIS React UI Components Library that can be used to pick n mix into other React sites who wish to integrate into the OASIS API. It is also the main OASIS Portal site and example site of how to build a UI on the OASIS API.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the Collaboration for the Establishment of an African Population Cohort Consortium which developed with React and Tailwind CSS.
 
 ## Project Structure
 ```
@@ -15,8 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 |   |   |   ├── scss
 |   |   ├── components 
 |   |   |   ├── common
-|   |   |   |   ├── sidebar
-|   |   |   ├── popups
+|   |   |   |   ├── Navbar
+|   |   |   ├── pages
 │   │   └── index.js
 ```
 
@@ -26,7 +24,7 @@ All of the files are stored in react-app folder.
 - `assets` folder contains all assets files for each component like images and css/scss files.
 - `components` folder contains different components used in the app.
 - `components/common` folder contains different components tha are common like sidebar, navbar etc.
-- `components/popups` folder contains different popup components.
+- `components/pages` folder contains different pages container.
 - `index.js` is the main javaScript file needed for the react-app.
 
 ## CSS Syntax rules
