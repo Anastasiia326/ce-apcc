@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
+import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [collapse, setCollapse] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="container flex flex-col md:flex-row justify-between items-center bg-transparent px-4 py-10 mx-auto">
+    <nav className="navbar container flex flex-col md:flex-row justify-between items-center bg-transparent px-4 py-10 mx-auto">
       <div className="nav-left flex justify-between items-center w-full">
         <div><Link to="/" className="cursor-pointer">
           <img className="nav-logo w-20 h-auto" src={logo} alt="logo" />
@@ -45,11 +46,18 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <ul className={`${hidden ? "hidden" : ""} text-black md:block md:w-auto min-w-full md:min-w-fit ${!collapse ? "hidden":""}`} id="navbar-dropdown">
+      <ul className={`${hidden ? "hidden" : ""} text-black md:block md:w-auto min-w-full md:min-w-fit ${!collapse ? "hidden" : ""}`} id="navbar-dropdown">
         <li className="md:inline-block mx-4"><Link to="/home" className="text-xl leading-loose hover:text-[#1BAE70]">Home</Link></li>
-        <li className="md:inline-block mx-4"><Link to="/about" className="text-xl leading-loose hover:text-[#1BAE70]">About us</Link></li>
+        <li className="md:inline-block mx-4 hover:text-[#1BAE70]">
+          <Link to="/about" className="dropbtn flex flex-row items-center text-xl leading-loose hover:text-[#1BAE70]">
+            About us <FaChevronDown className="text-[#686868] text-base ml-2" />
+          </Link>
+          <div className="dropdown-content">
+            <Link to="/collaborators" className="text-xl leading-loose hover:text-[#1BAE70]">Collaborators</Link>
+          </div>
+        </li>
         <li className="md:inline-block mx-4"><Link to="/contact" className="text-xl leading-loose hover:text-[#1BAE70]">Contact</Link></li>
-        <li className="md:inline-block mx-4"><Link to="/collaborators" className="text-xl leading-loose hover:text-[#1BAE70]">Forums</Link></li>
+        <li className="md:inline-block mx-4"><Link to="/forums" className="text-xl leading-loose hover:text-[#1BAE70]">Forums</Link></li>
         <li className="md:inline-block mx-4"><Link to="/login" className="text-[#1BAE70] text-xl leading-loose hover:text-black">Log in</Link></li>
       </ul>
     </nav>
