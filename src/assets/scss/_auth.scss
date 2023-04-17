@@ -1,0 +1,53 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $black;
+    position: relative;
+    &-background {
+        width: 100%;
+        margin: 300px 0 200px;
+    }
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin: auto;
+        width: 412px;
+        top: 0px;
+        .oasis-logo {
+            max-width: 240px;
+            margin: 86px 0 52px;
+        }
+        .auth-content {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);;
+            border: 0.5px solid #838383;
+            border-radius: 15px;
+            .auth-tabs {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                button {
+                    padding: 19px 0;
+                    width: 100%;
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    border-bottom: 0.5px solid #838383;
+                    &.active {
+                        border-bottom: 2px solid $blue;
+                        // transition: all 0.2s ease;
+                    }
+                }
+                .login { border-right: 0.5px solid #838383; }
+            }
+            &-body {
+                padding: 40px 32px 30px;
+            }
+        }
+    }
+}

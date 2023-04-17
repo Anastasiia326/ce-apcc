@@ -1,0 +1,120 @@
+.footer {
+  background: $grey;
+
+  &-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    z-index: 10;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      grid-template-rows: 1fr;
+      grid-template-columns: auto 1fr;
+    }
+
+    // .contact {
+    //   ul {
+    //     margin-right: 56px;
+
+    //     li {
+    //       margin-bottom: 33px;
+    //       color: $white;
+    //       font-size: 16px;
+    //       font-weight: 400;
+
+    //       a {
+    //         background: $white;
+    //         border-radius: 50%;
+    //         color: $black;
+    //         padding: 3px;
+
+    //         &:hover {
+    //           background: $black;
+    //           color: $white;
+    //           transition: all 0.5s ease;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    .raffles,
+    .support {
+      ul {
+        li {
+          margin-bottom: 10px;
+          color: $white;
+          font-size: 16px;
+          font-weight: 400;
+
+          p:first-child {
+            color: $blue;
+            margin-bottom: 28px;
+          }
+
+          a {
+            color: $white;
+          }
+
+          a:hover {
+            color: $gold;
+            transition: all 0.2s ease;
+          }
+        }
+      }
+    }
+
+    .newsletter {
+      ul {
+        li {
+          margin-bottom: 22px;
+          color: $white;
+          font-size: 16px;
+          font-weight: 400;
+
+          p:first-child {
+            color: $blue;
+            margin-bottom: 28px;
+          }
+
+          form {
+            input {
+              width: 100%;
+              outline: solid 0.5px #A0BCF8;
+              font-size: 16px;
+              line-height: 24px;
+              border-radius: 8px;
+              color: $white;
+              padding: 16px;
+            }
+          }
+
+          .button {
+            padding: 16px 48px;
+          }
+
+          ul {
+            margin: 0;
+
+            li {
+              cursor: pointer;
+              display: inline-block;
+              margin: 0 16px 0 0;
+              position: relative;
+              border: solid 1px white;
+              border-radius: 20px;
+              padding: 8px;
+              width: 40px;
+              text-align: center;
+              height: 40px;
+
+              a {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
