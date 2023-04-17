@@ -5,6 +5,7 @@ import Footer from "../common/Footer";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
+import Collaborators from './Collaborators';
 
 const Pages = () => {
   return (
@@ -16,6 +17,7 @@ const Pages = () => {
           <Route path={'/home'} element={<Home />} />
           <Route path={'/about'} element={<AboutUs />} />
           <Route path={'/contact'} element={<ContactUs />} />
+          <Route path={'/collaborators'} element={<Collaborators />} />
           <Route path={'/'} element={<Navigate to='/home' />} />
         </Routes>
       </main>

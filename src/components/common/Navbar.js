@@ -49,7 +49,7 @@ const Navbar = () => {
         <li className="md:inline-block mx-4"><Link to="/home" className="text-xl leading-loose hover:text-[#1BAE70]">Home</Link></li>
         <li className="md:inline-block mx-4"><Link to="/about" className="text-xl leading-loose hover:text-[#1BAE70]">About us</Link></li>
         <li className="md:inline-block mx-4"><Link to="/contact" className="text-xl leading-loose hover:text-[#1BAE70]">Contact</Link></li>
-        <li className="md:inline-block mx-4"><Link to="/forum" className="text-xl leading-loose hover:text-[#1BAE70]">Forums</Link></li>
+        <li className="md:inline-block mx-4"><Link to="/collaborators" className="text-xl leading-loose hover:text-[#1BAE70]">Forums</Link></li>
         <li className="md:inline-block mx-4"><Link to="/login" className="text-[#1BAE70] text-xl leading-loose hover:text-black">Log in</Link></li>
       </ul>
     </nav>
