@@ -3,7 +3,7 @@ import MapImage from "../../assets/images/map.png";
 function ContactUs () {
   return (
     <div className="contact-us">
-      <div className="container mx-auto grid grid-cols-2 gap-8 px-4">
+      <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 px-4">
         <div className="mb-[120px]">
           <h1 className="text-[#333333] text-6xl text-center font-bold leading-[54px] mb-14">Contact us</h1>
           <div className="bg-[#DDF3EA] rounded-2xl px-5 py-3">
