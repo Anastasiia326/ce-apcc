@@ -13,7 +13,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <div className="container footer-main grid grid-cols-1 lg:grid-cols-6 mx-auto px-20 pb-8 mt-10">
+        <div className="container footer-main grid grid-cols-1 lg:grid-cols-6 mx-auto px-8 sm:px-20 pb-8 mt-10">
           <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-1 lg:col-span-2">
             <ul>
               <li className="mb-4"><img src={logo} alt="" className="m-auto lg:m-0 w-20" /></li>
