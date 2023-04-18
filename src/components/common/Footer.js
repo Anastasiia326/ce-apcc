@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 
 import { BsYoutube, BsFacebook, BsInstagram } from 'react-icons/bs';
 import { FaTwitter } from 'react-icons/fa';
+import { HiPhone, HiOutlineMail } from "react-icons/hi";
+import { MdLocationOn } from "react-icons/md";
+
 import logo from "../../assets/images/logo.svg";
 
 class Footer extends React.Component {
@@ -15,48 +18,36 @@ class Footer extends React.Component {
             <ul>
               <li className="mb-4"><img src={logo} alt="" className="m-auto lg:m-0 w-20" /></li>
               <li className="text-white">EMAIL</li>
-              <li><p>Samantha.Khan-Gillmore@ahri.org</p></li>
+              <li><p className="mb-4">Samantha.Khan-Gillmore@ahri.org</p></li>
               <li className="text-white">LOCATION</li>
-              <li><p>APHRC Campus, Kitisuru, Nairobi, Kenya</p></li>
+              <li><p className="mb-4">APHRC Campus, Kitisuru, Nairobi, Kenya</p></li>
+            </ul>
+          </div>
+          <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-2 mt-12">
+            <ul>
+              <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Contact Info</h4></li>
+              <li className="flex flex-row my-4"><MdLocationOn className="text-2xl text-[#1BAE70] mr-4" /> P.O. Box 10787-00100, Nairobi, Kenya</li>
+              <li className="flex flex-row my-4"><HiPhone className="text-2xl text-[#1BAE70] mr-4" /> +254 722 205 933, 733 410 102</li>
+              <li className="flex flex-row my-4"><HiOutlineMail className="text-2xl text-[#1BAE70] mr-4" /> evidence@cartafrica.org</li>
             </ul>
           </div>
           <div className="aboutus text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
             <ul>
-              <li><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">About Us</h4></li>
-              <li><a href="#">xxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxx</a></li>
-            </ul>
-          </div>
-          <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
-            <ul>
-              <li><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Contact</h4></li>
-              <li><a href="#">xxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxx</a></li>
-            </ul>
-          </div>
-          <div className="forums text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
-            <ul>
-              <li><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Forums</h4></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
-              <li><a href="#">xxxxxxxxxxxxxx</a></li>
+              <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Quick Links</h4></li>
+              <li className="my-4"><a href="/home">Home</a></li>
+              <li className="my-4"><a href="/about">About us</a></li>
+              <li className="my-4"><a href="/collaborators">Collaborators</a></li>
+              <li className="my-4"><a href="/contact">Contact</a></li>
+              <li className="my-4"><a href="/forums">Forums</a></li>
             </ul>
           </div>
           <div className="help text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
-            <ul>
-              <li><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Help</h4></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Condition</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">FAQs</a></li>
+            <ul className="my-4">
+              <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Help</h4></li>
+              <li className="my-4"><a href="#">Privacy</a></li>
+              <li className="my-4"><a href="#">Condition</a></li>
+              <li className="my-4"><a href="#">Blog</a></li>
+              <li className="my-4"><a href="#">FAQs</a></li>
             </ul>
           </div>
         </div>
