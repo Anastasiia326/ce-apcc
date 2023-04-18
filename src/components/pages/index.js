@@ -6,11 +6,14 @@ import Home from "./Home";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import Collaborators from './Collaborators';
+import News from './News';
+import Publication from './Publication';
+import Cohorts from './Cohorts';
 
 const Pages = () => {
   return (
     <div className="main-container">
-      <header><Navbar/></header>
+      <header><Navbar /></header>
 
       <main className="content">
         <Routes>
@@ -18,6 +21,9 @@ const Pages = () => {
           <Route path={'/about'} element={<AboutUs />} />
           <Route path={'/contact'} element={<ContactUs />} />
           <Route path={'/collaborators'} element={<Collaborators />} />
+          <Route path={'/news'} element={<News />} />
+          <Route path={'/publication'} element={<Publication />} />
+          <Route path={'/cohorts'} element={<Cohorts />} />
           <Route path={'/'} element={<Navigate to='/home' />} />
         </Routes>
       </main>

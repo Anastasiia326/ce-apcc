@@ -8,7 +8,7 @@ const Navbar = () => {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    if (window.screen.width < 768) setHidden(true);
+    if (window.screen.width < 1024) setHidden(true);
   }, [])
 
   const handleToggle = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar container flex flex-col md:flex-row justify-between items-center bg-transparent px-4 py-10 mx-auto">
+    <nav className="navbar container flex flex-col lg:flex-row justify-between items-center bg-transparent px-4 py-10 mx-auto">
       <div className="nav-left flex justify-between items-center w-full">
         <div><Link to="/" className="cursor-pointer">
           <img className="nav-logo w-20 h-auto" src={logo} alt="logo" />
@@ -25,7 +25,7 @@ const Navbar = () => {
           data-target="#navbar-dropdown"
           data-toggle="navbar-dropdown"
           type="button"
-          className="inline-flex items-center w-fit p-2 ml-3 text-xl text-gray-500 rounded-lg md:hidden bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center w-fit p-2 ml-3 text-xl text-gray-500 rounded-lg lg:hidden bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-dropdown"
           aria-expanded="false"
           onClick={handleToggle}
@@ -46,9 +46,9 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <ul className={`${hidden ? "hidden" : ""} text-black md:block md:w-auto min-w-full md:min-w-fit ${!collapse ? "hidden" : ""}`} id="navbar-dropdown">
-        <li className="md:inline-block mx-4"><Link to="/home" className="text-xl leading-loose hover:text-[#1BAE70]">Home</Link></li>
-        <li className="md:inline-block mx-4 hover:text-[#1BAE70]">
+      <ul className={`${hidden ? "hidden" : ""} text-black lg:block lg:w-auto min-w-full lg:min-w-fit ${!collapse ? "hidden" : ""}`} id="navbar-dropdown">
+        <li className="lg:inline-block mx-4"><Link to="/home" className="text-xl leading-loose hover:text-[#1BAE70]">Home</Link></li>
+        <li className="lg:inline-block mx-4 hover:text-[#1BAE70]">
           <Link to="/about" className="dropbtn flex flex-row items-center text-xl leading-loose hover:text-[#1BAE70]">
             About us <FaChevronDown className="text-[#686868] text-base ml-2" />
           </Link>
@@ -56,9 +56,18 @@ const Navbar = () => {
             <Link to="/collaborators" className="text-xl leading-loose hover:text-[#1BAE70]">Collaborators</Link>
           </div>
         </li>
-        <li className="md:inline-block mx-4"><Link to="/contact" className="text-xl leading-loose hover:text-[#1BAE70]">Contact</Link></li>
-        <li className="md:inline-block mx-4"><Link to="/forums" className="text-xl leading-loose hover:text-[#1BAE70]">Forums</Link></li>
-        <li className="md:inline-block mx-4"><Link to="/login" className="text-[#1BAE70] text-xl leading-loose hover:text-black">Log in</Link></li>
+        <li className="lg:inline-block mx-4 hover:text-[#1BAE70]">
+          <Link to="/resource" className="dropbtn flex flex-row items-center text-xl leading-loose hover:text-[#1BAE70]">
+            Resources <FaChevronDown className="text-[#686868] text-base ml-2" />
+          </Link>
+          <div className="dropdown-content">
+            <Link to="/news" className="text-xl leading-loose hover:text-[#1BAE70]">News and articles</Link>
+            <Link to="/publication" className="text-xl leading-loose hover:text-[#1BAE70]">Useful publications</Link>
+          </div>
+        </li>
+        <li className="lg:inline-block mx-4"><Link to="/cohorts" className="text-xl leading-loose hover:text-[#1BAE70]">African Cohorts</Link></li>
+        <li className="lg:inline-block mx-4"><Link to="/contact" className="text-xl leading-loose hover:text-[#1BAE70]">Contact</Link></li>
+        <li className="lg:inline-block mx-4"><Link to="/login" className="text-[#1BAE70] text-xl leading-loose hover:text-black">Log in</Link></li>
       </ul>
     </nav>
   );
