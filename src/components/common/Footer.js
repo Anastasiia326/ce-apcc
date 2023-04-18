@@ -13,8 +13,8 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <div className="container footer-main grid grid-cols-2 lg:grid-cols-6 mx-auto px-20 pb-8 mt-10">
-          <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-2 lg:col-span-2">
+        <div className="container footer-main grid grid-cols-1 lg:grid-cols-6 mx-auto px-20 pb-8 mt-10">
+          <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-1 lg:col-span-2">
             <ul>
               <li className="mb-4"><img src={logo} alt="" className="m-auto lg:m-0 w-20" /></li>
               <li className="text-white">EMAIL</li>
@@ -23,15 +23,15 @@ class Footer extends React.Component {
               <li><p className="mb-4">APHRC Campus, Kitisuru, Nairobi, Kenya</p></li>
             </ul>
           </div>
-          <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-2 mt-12">
+          <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-1 lg:col-span-2 mt-12">
             <ul>
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Contact Info</h4></li>
-              <li className="flex flex-row my-4 hover:text-white"><MdLocationOn className="text-2xl text-[#1BAE70] mr-4" /> P.O. Box 10787-00100, Nairobi, Kenya</li>
-              <li className="flex flex-row my-4 hover:text-white"><HiPhone className="text-2xl text-[#1BAE70] mr-4" /> +254 722 205 933, 733 410 102</li>
-              <li className="flex flex-row my-4 hover:text-white"><HiOutlineMail className="text-2xl text-[#1BAE70] mr-4" /> evidence@cartafrica.org</li>
+              <li className="flex flex-row justify-center lg:justify-start my-4 hover:text-white"><MdLocationOn className="text-2xl text-[#1BAE70] mr-4" /> P.O. Box 10787-00100, Nairobi, Kenya</li>
+              <li className="flex flex-row justify-center lg:justify-start my-4 hover:text-white"><HiPhone className="text-2xl text-[#1BAE70] mr-4" /> +254 722 205 933, 733 410 102</li>
+              <li className="flex flex-row justify-center lg:justify-start my-4 hover:text-white"><HiOutlineMail className="text-2xl text-[#1BAE70] mr-4" /> evidence@cartafrica.org</li>
             </ul>
           </div>
-          <div className="aboutus text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
+          <div className="aboutus text-[#D6D6D6] text-center lg:text-left col-span-1 mt-12">
             <ul>
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Quick Links</h4></li>
               <li className="my-4"><a href="/home" className="hover:text-[#1BAE70]">Home</a></li>
@@ -41,7 +41,7 @@ class Footer extends React.Component {
               <li className="my-4"><a href="/forums" className="hover:text-[#1BAE70]">Forums</a></li>
             </ul>
           </div>
-          <div className="help text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
+          <div className="help text-[#D6D6D6] text-center lg:text-left col-span-1 mt-12">
             <ul className="my-4">
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Help</h4></li>
               <li className="my-4"><a href="#" className="hover:text-[#1BAE70]">Privacy</a></li>
