@@ -26,28 +26,28 @@ class Footer extends React.Component {
           <div className="contact text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-2 mt-12">
             <ul>
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Contact Info</h4></li>
-              <li className="flex flex-row my-4"><MdLocationOn className="text-2xl text-[#1BAE70] mr-4" /> P.O. Box 10787-00100, Nairobi, Kenya</li>
-              <li className="flex flex-row my-4"><HiPhone className="text-2xl text-[#1BAE70] mr-4" /> +254 722 205 933, 733 410 102</li>
-              <li className="flex flex-row my-4"><HiOutlineMail className="text-2xl text-[#1BAE70] mr-4" /> evidence@cartafrica.org</li>
+              <li className="flex flex-row my-4 hover:text-white"><MdLocationOn className="text-2xl text-[#1BAE70] mr-4" /> P.O. Box 10787-00100, Nairobi, Kenya</li>
+              <li className="flex flex-row my-4 hover:text-white"><HiPhone className="text-2xl text-[#1BAE70] mr-4" /> +254 722 205 933, 733 410 102</li>
+              <li className="flex flex-row my-4 hover:text-white"><HiOutlineMail className="text-2xl text-[#1BAE70] mr-4" /> evidence@cartafrica.org</li>
             </ul>
           </div>
           <div className="aboutus text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
             <ul>
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Quick Links</h4></li>
-              <li className="my-4"><a href="/home">Home</a></li>
-              <li className="my-4"><a href="/about">About us</a></li>
-              <li className="my-4"><a href="/collaborators">Collaborators</a></li>
-              <li className="my-4"><a href="/contact">Contact</a></li>
-              <li className="my-4"><a href="/forums">Forums</a></li>
+              <li className="my-4"><a href="/home" className="hover:text-[#1BAE70]">Home</a></li>
+              <li className="my-4"><a href="/about" className="hover:text-[#1BAE70]">About us</a></li>
+              <li className="my-4"><a href="/collaborators" className="hover:text-[#1BAE70]">Collaborators</a></li>
+              <li className="my-4"><a href="/contact" className="hover:text-[#1BAE70]">Contact</a></li>
+              <li className="my-4"><a href="/forums" className="hover:text-[#1BAE70]">Forums</a></li>
             </ul>
           </div>
           <div className="help text-[#D6D6D6] text-center lg:text-left col-span-2 sm:col-span-1 lg:col-span-1 mt-12">
             <ul className="my-4">
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Help</h4></li>
-              <li className="my-4"><a href="#">Privacy</a></li>
-              <li className="my-4"><a href="#">Condition</a></li>
-              <li className="my-4"><a href="#">Blog</a></li>
-              <li className="my-4"><a href="#">FAQs</a></li>
+              <li className="my-4"><a href="#" className="hover:text-[#1BAE70]">Privacy</a></li>
+              <li className="my-4"><a href="#" className="hover:text-[#1BAE70]">Condition</a></li>
+              <li className="my-4"><a href="#" className="hover:text-[#1BAE70]">Blog</a></li>
+              <li className="my-4"><a href="#" className="hover:text-[#1BAE70]">FAQs</a></li>
             </ul>
           </div>
         </div>

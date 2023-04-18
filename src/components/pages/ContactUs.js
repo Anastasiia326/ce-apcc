@@ -1,6 +1,8 @@
+import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import MapImage from "../../assets/images/map.png";
+import { useMemo } from "react";
 
-function ContactUs () {
+function ContactUs() {
   return (
     <div className="contact-us">
       <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 px-4">
