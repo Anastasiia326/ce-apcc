@@ -2,6 +2,8 @@ import React from "react";
 import MapText from "../common/Home/MapText";
 import Descriptions from "../common/Home/Descriptions";
 import OurAim from "../common/About/OurAim";
+import Institutions from "../common/Home/Institutions";
+import Funders from "../common/Home/Funder";
 
 function Home() {
   return (
@@ -24,6 +26,10 @@ function Home() {
         <OurAim />
 
         <Descriptions />
+
+        <Institutions />
+
+        <Funders />
       </div>
     </>
   );

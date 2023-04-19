@@ -9,6 +9,7 @@ import Collaborators from './Collaborators';
 import News from './News';
 import Publication from './Publication';
 import Cohorts from './Cohorts';
+import Resources from './Resource';
 
 const Pages = () => {
   return (
@@ -23,6 +24,7 @@ const Pages = () => {
           <Route path={'/collaborators'} element={<Collaborators />} />
           <Route path={'/news'} element={<News />} />
           <Route path={'/publication'} element={<Publication />} />
+          <Route path={'/resource'} element={<Resources />} />
           <Route path={'/cohorts'} element={<Cohorts />} />
           <Route path={'/'} element={<Navigate to='/home' />} />
         </Routes>

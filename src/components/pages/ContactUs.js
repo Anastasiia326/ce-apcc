@@ -1,6 +1,5 @@
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import GoogleMap from "../common/Contact/GoogleMap";
 import MapImage from "../../assets/images/map.png";
-import { useMemo } from "react";
 
 function ContactUs() {
   return (
@@ -11,7 +10,7 @@ function ContactUs() {
           <div className="bg-[#DDF3EA] rounded-2xl px-5 py-3">
             <h3 className="text-[#333333] text-3xl text-center font-bold leading-[54px] mb-4.5">You can find us at</h3>
             <h6 className="text-[#656565] text-base leading-[30px]">EMAIL</h6>
-            <p className="text-[#333333] text-xl leading-[30px] mb-6">Samantha.Khan-Gillmore@ahri.org</p>
+            <p className="text-[#333333] text-xl leading-[30px] mb-6">Kobus.herbst@mrc.ac.za</p>
             <h6 className="text-[#656565] text-base leading-[30px]">PHONE NUMBER</h6>
             <p className="text-[#333333] text-xl leading-[30px] mb-6">+254 (20) 400 1000, 266 2244 or 266 2255</p>
             <h6 className="text-[#656565] text-base leading-[30px]">LOCATION</h6>
@@ -26,8 +25,8 @@ function ContactUs() {
             <button type="button" className="bg-[#1BAE70] rounded-xl text-white text-xl text-center leading-[54px] py-1 px-8">Send Message</button>
           </div>
         </div>
-        <div className="google-map mb-[120px]">
-          <img src={MapImage} alt="Google Map" className="w-full h-full" />
+        <div className="map mb-[120px]">
+          <GoogleMap />
         </div>
       </div>
     </div>
