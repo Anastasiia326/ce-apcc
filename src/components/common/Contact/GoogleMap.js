@@ -52,5 +52,5 @@ function GoogleMap(props) {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDL1JsBVwLQIPSRThsJ5ToOv3B497vToAQ'
+  apiKey: process.env.REACT_APP_MAP_API_KEY
 })(GoogleMap);
