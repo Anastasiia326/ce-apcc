@@ -6,7 +6,7 @@ function Objectives (props) {
         {props.children}
       </div>
       <div>
-        <p className="text-xl leading-[54px]">{props.text}</p>
+        <p className="text-xl leading-[30px] sm:leading-[54px]">{props.text}</p>
       </div>
     </div>
   )

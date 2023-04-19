@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import OurObjectives from "../common/About/OurObjectives";
+import OurWorkstream from "../common/About/Workstream";
 import OurVision from "../common/About/OurVision";
 import Post from "../common/About/Post";
 
 function AboutUs() {
   useEffect(() => {
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, [])
 
   return (
@@ -19,6 +20,8 @@ function AboutUs() {
       </div>
 
       <OurObjectives />
+
+      <OurWorkstream />
 
       <OurVision />
 

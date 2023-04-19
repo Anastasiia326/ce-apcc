@@ -17,7 +17,7 @@ export const config = [
   {
     path: Stage3,
     title: "CE-APCC Workstreams",
-    description: "During the third stage of the formative phase, work will proceed in seven workstreams (Stakeholder and Community Engagement, Existing Cohort Engagement, Research Vision & Objectives, Data & Methodology, ‘Omics, Governance & Ethics, and Capacity Strengthening) to detail the optimal components of the APCC."
+    description: "During the third stage of the formative phase, work will proceed in seven workstreams to detail the optimal components of an APCC."
   },
   {
     path: Stage4,
