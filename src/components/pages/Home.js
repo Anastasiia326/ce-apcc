@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect} from "react";
 import MapText from "../common/Home/MapText";
 import Descriptions from "../common/Home/Descriptions";
 import OurAim from "../common/About/OurAim";
@@ -6,6 +6,10 @@ import Institutions from "../common/Home/Institutions";
 import Funders from "../common/Home/Funder";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+  }, [])
+
   return (
     <>
       <div className="home">

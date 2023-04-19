@@ -53,7 +53,7 @@ const Navbar = () => {
             About us <FaChevronDown className="text-[#686868] text-base ml-2" />
           </Link>
           <div className="dropdown-content">
-            <Link to="/aim" className="text-xl leading-loose hover:text-[#1BAE70]">Aim and objectives</Link>
+            <Link to="/about" className="text-xl leading-loose hover:text-[#1BAE70]">Aim and objectives</Link>
             <Link to="/collaborators" className="text-xl leading-loose hover:text-[#1BAE70]">Collaborators</Link>
           </div>
         </li>

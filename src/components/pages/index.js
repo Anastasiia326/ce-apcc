@@ -19,6 +19,7 @@ const Pages = () => {
       <main className="content">
         <Routes>
           <Route path={'/home'} element={<Home />} />
+          {/* <Route path={'/aim'} element={<Navigate to="/about" />} /> */}
           <Route path={'/about'} element={<AboutUs />} />
           <Route path={'/contact'} element={<ContactUs />} />
           <Route path={'/collaborators'} element={<Collaborators />} />

@@ -7,7 +7,7 @@ import AHRI from "../../../assets/images/AHRI.svg";
 function Institutions () {
   return (
     <div className="container mx-auto py-2 px-4 mb-8">
-      <h1 className="text-[#333333] text-5xl text-center font-bold leading-[60px] my-4">Core Institutions</h1>
+      <h1 className="text-[#333333] text-5xl text-center font-bold leading-[60px] my-4">CORE COLLABORATING INSTITUTIONS</h1>
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <img src={APHRC} alt="APHRC" className="my-2"/>
         <img src={AFIDEP} alt="AFIDEP" className="my-2"/>

@@ -31,20 +31,19 @@ class Footer extends React.Component {
           <div className="aboutus text-[#D6D6D6] text-center lg:text-left col-span-1 mt-12">
             <ul>
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Quick Links</h4></li>
-              <li className="my-4"><a href="/home" className="hover:text-[#1BAE70]">Home</a></li>
-              <li className="my-4"><a href="/about" className="hover:text-[#1BAE70]">About us</a></li>
-              <li className="my-4"><a href="/aim" className="hover:text-[#1BAE70]">Aim and objectives</a></li>
-              <li className="my-4"><a href="/collaborators" className="hover:text-[#1BAE70]">Collaborators</a></li>
-              <li className="my-4"><a href="/contact" className="hover:text-[#1BAE70]">Contact</a></li>
-              {/* <li className="my-4"><a href="/forums" className="hover:text-[#1BAE70]">Forums</a></li> */}
+              <li className="my-4"><Link to="/home" className="hover:text-[#1BAE70]">Home</Link></li>
+              <li className="my-4"><Link to="/about" className="hover:text-[#1BAE70]">Aim and objectives</Link></li>
+              <li className="my-4"><Link to="/collaborators" className="hover:text-[#1BAE70]">Collaborators</Link></li>
+              <li className="my-4"><Link to="/contact" className="hover:text-[#1BAE70]">Contact</Link></li>
+              {/* <li className="my-4"><a href="/forums" className="hover:text-[#1BAE70]">Forums</Link></li> */}
             </ul>
           </div>
           <div className="help text-[#D6D6D6] text-center lg:text-left col-span-1 mt-12">
             <ul className="my-4">
               <li className="my-4"><h4 className="text-2xl text-[#1BAE70] font-bold mb-3">Resouces</h4></li>
-              <li className="my-4"><a href="/news" className="hover:text-[#1BAE70]">News and articles</a></li>
-              <li className="my-4"><a href="/publication" className="hover:text-[#1BAE70]">Useful publications</a></li>
-              <li className="my-4"><a href="/cohorts" className="hover:text-[#1BAE70]">African Cohorts</a></li>
+              <li className="my-4"><Link to="/news" className="hover:text-[#1BAE70]">News and articles</Link></li>
+              <li className="my-4"><Link to="/publication" className="hover:text-[#1BAE70]">Useful publications</Link></li>
+              <li className="my-4"><Link to="/cohorts" className="hover:text-[#1BAE70]">African Cohorts</Link></li>
             </ul>
           </div>
         </div>

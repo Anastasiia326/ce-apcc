@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import GoogleMap from "../common/Contact/GoogleMap";
 import MapImage from "../../assets/images/map.png";
 
 function ContactUs() {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+  }, [])
+
   return (
     <div className="contact-us">
       <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 px-4">
