@@ -47,7 +47,7 @@ class Footer extends React.Component {
             </ul>
           </div>
         </div>
-        <div className="container mx-auto px-20 w-full">
+        <div className="container mx-auto px-8 sm:px-20 w-full">
           <div className="flex flex-col sm:flex-row justify-between items-center border-t border-solid py-4 border-[#D6D6D6]">
             <p className="text-white my-2">Copyright&copy;2023 CE-APCC</p>
             <div className="social-list flex justify-center lg:justify-end items-center my-2">

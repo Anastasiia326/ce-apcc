@@ -11,7 +11,7 @@ function ContactUs() {
     <div className="contact-us">
       <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 px-4">
         <div className="mb-[120px]">
-          <h1 className="text-[#333333] text-6xl text-center font-bold leading-[54px] mb-14">Contact us</h1>
+          <h1 className="text-[#333333] text-5xl sm:text-6xl text-center font-bold leading-[54px] mb-14">Contact us</h1>
           <div className="bg-[#DDF3EA] rounded-2xl px-5 py-3">
             <h3 className="text-[#333333] text-3xl text-center font-bold leading-[54px] mb-4.5">You can find us at</h3>
             <h6 className="text-[#656565] text-base leading-[30px]">EMAIL</h6>
