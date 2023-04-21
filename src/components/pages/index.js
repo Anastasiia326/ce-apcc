@@ -10,6 +10,8 @@ import News from './News';
 import Publication from './Publication';
 import Cohorts from './Cohorts';
 import Resources from './Resource';
+import NewsDashboard from "../common/News/NewsDashboard";
+import NewsDetail from './NewsDetail';
 
 const Pages = () => {
   return (
@@ -23,7 +25,10 @@ const Pages = () => {
           <Route path={'/about'} element={<AboutUs />} />
           <Route path={'/contact'} element={<ContactUs />} />
           <Route path={'/collaborators'} element={<Collaborators />} />
-          <Route path={'/news'} element={<News />} />
+          <Route path={'/news/*'} element={<News />}>
+            <Route index element={<NewsDashboard />} />
+            <Route path={'detail/:id'} element={<NewsDetail />} />
+          </Route>
           <Route path={'/publication'} element={<Publication />} />
           <Route path={'/resource'} element={<Resources />} />
           <Route path={'/cohorts'} element={<Cohorts />} />

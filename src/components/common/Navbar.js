@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
         </li>
         <li className="lg:inline-block mx-4 hover:text-[#1BAE70]">
-          <Link to="/resource" className="dropbtn flex flex-row items-center text-xl leading-loose hover:text-[#1BAE70]">
+          <Link to="/news" className="dropbtn flex flex-row items-center text-xl leading-loose hover:text-[#1BAE70]">
             Resources <FaChevronDown className="text-[#686868] text-base ml-2" />
           </Link>
           <div className="dropdown-content">
