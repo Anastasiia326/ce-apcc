@@ -9,7 +9,7 @@ function News() {
 
   return (
     <div className="news">
-      <h1 className="contianer mx-auto text-[#333333] text-6xl text-center my-16 font-bold leading-[60px]">News and articles</h1>
+      <h1 className="contianer mx-auto text-[#333333] text-3xl sm:text-6xl text-center my-16 font-bold leading-[60px]">News and articles</h1>
 
       <Outlet />
 

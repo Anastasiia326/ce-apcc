@@ -9,9 +9,9 @@ function NewsDetail() {
   }, [])
 
   return (
-    <div className="container mx-auto px-32">
+    <div className="container mx-auto px-4 sm:px-16 lg:px-32">
       <h3 className="text-black text-3xl text-center font-bold leading-[60px]">The Collaboration for the Establishment of an African Population Cohorts Consortium (CE-APCC)</h3>
-      <div className="my-16 w-[60%] mx-auto">
+      <div className="my-16 w-full ld:w-[60%] mx-auto">
         <img src={NewsImage} alt="News Image" className="w-full h-auto rounded-xl" />
       </div>
       <div className="">
@@ -24,15 +24,15 @@ function NewsDetail() {
           The value of longitudinal population cohorts to enable the study of diverse populations and key demographic subgroups, rare genetic variants and exposures, and gene-environment interactions is recognised by the International HundredK+ Cohorts Consortium5. Health and demographic surveillance systems, a specific type of population-based cohort, have a long history of providing important scientific insights into the burden of disease and responsive interventions in different regions and communities in Africa6.
           The realisation that a consortium of population cohorts in Africa can contribute massively to harnessing the genetic, socio-economic, cultural, and environmental diversity of Africa for scientific discovery underlies the efforts of the Collaboration for the Establishment of an African Population Cohort Consortium (CE-APCC). We aim to unlock the potential of a network of population cohorts in Africa through interoperability across cohorts, data harmonisation, safe harbour agreements to allow data transfer between countries and cohorts7, whilst at the same time using the investment in and expertise already present in these cohorts to build research capacity in the continent.
           The CE-APCC is a collaboration of African scientists that aims to create a transformational capability and forum on population-based cohorts involving a broad spectrum of African scientists, policymakers, community contributors, and other stakeholders to co-create an evidence-based blueprint for the APCC and to build enthusiasm and support for its implementation and long-term support.
-          The CE-APCC is currently undertaking a rigorous formative phase leading up to the establishment of the APCC in 2024. The formative phase comprises four stages:
-          A review of population-based cohort science in Africa, including a survey of existing cohorts, an assessment of the synergies between the APCC and other ongoing efforts to support African research, and identification of stakeholders.
-          A series of virtual thematic workshops during the second and third quarters of 2023 to discuss and debate issues identified during the previous stage will be conducted with scientists active in African cohorts and other key stakeholders.
-          During the third stage of the formative phase, work will proceed in seven workstreams (Stakeholder and Community Engagement, Existing Cohort Engagement, Research Vision & Objectives, Data & Methodology, ‘Omics, Governance & Ethics, and Capacity Strengthening) to detail the optimal components of the APCC.
-          The final stage will culminate in an in-person meeting towards the end of the first quarter of 2024 to reach a consensus and finalise the APCC blueprint document for submission to the funders and wider scientific, policy and development communities.
+          The CE-APCC is currently undertaking a rigorous formative phase leading up to the establishment of the APCC in 2024. The formative phase comprises four stages:<br />
+          1. A review of population-based cohort science in Africa, including a survey of existing cohorts, an assessment of the synergies between the APCC and other ongoing efforts to support African research, and identification of stakeholders.<br />
+          2. A series of virtual thematic workshops during the second and third quarters of 2023 to discuss and debate issues identified during the previous stage will be conducted with scientists active in African cohorts and other key stakeholders.<br />
+          3. During the third stage of the formative phase, work will proceed in seven workstreams (Stakeholder and Community Engagement, Existing Cohort Engagement, Research Vision & Objectives, Data & Methodology, ‘Omics, Governance & Ethics, and Capacity Strengthening) to detail the optimal components of the APCC.<br />
+          4. The final stage will culminate in an in-person meeting towards the end of the first quarter of 2024 to reach a consensus and finalise the APCC blueprint document for submission to the funders and wider scientific, policy and development communities.<br />
           The conclusion of the formative phase will herald a new and exciting phase for population cohort-based science in Africa, evidenced by greater collaboration and support for the impactful science facilitated by the APCC.
           Work takes place under the auspices of the Africa Population Health Research Centre (APHRC) with support cores at the African Institute for Development (AFIDEP), Africa Research and Impact Network (ARIN), Malawi Epidemiology and Intervention Research Unit (MEIRU), and The Africa Health Research Institute (AHRI). The formative phase of the CE-APCC is funded by the Wellcome, Trust, Medical Research Council (MRC-UKRI) and Bill & Melinda Gates Foundation.
           More information can be obtained from the co-leads of the CE-APCC, Dr Kobus Herbst (kobus.herbst@mrc.ac.za) and Dr Evelyn Gitau (egitau@aphrc.org) or the CE-APCC project manager, Samantha Khan-Gillmore (Samantha.Khan-Gillmore@ahri.org).</p>
-        <Link to="/news/detail/1" className="relative flex flex-row items-center w-fit z-10 text-[#1BAE70] hover:text-[#333333] text-2xl xl:text-3xl font-normal leading-[40px] my-16">
+        <Link to="/news" className="relative flex flex-row items-center w-fit z-10 text-[#1BAE70] hover:text-[#333333] text-xl sm:text-2xl xl:text-3xl font-normal leading-[40px] my-16">
           Back to News and articles <BsArrowRight className="ml-4" />
         </Link>
       </div>

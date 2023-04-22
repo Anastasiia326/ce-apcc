@@ -12,6 +12,8 @@ import Cohorts from './Cohorts';
 import Resources from './Resource';
 import NewsDashboard from "../common/News/NewsDashboard";
 import NewsDetail from './NewsDetail';
+import PublicationDashboard from "../common/Publication/PublicationDashboard";
+import PublicationDetail from "./PublicationDetail";
 
 const Pages = () => {
   return (
@@ -29,7 +31,10 @@ const Pages = () => {
             <Route index element={<NewsDashboard />} />
             <Route path={'detail/:id'} element={<NewsDetail />} />
           </Route>
-          <Route path={'/publication'} element={<Publication />} />
+          <Route path={'/publication'} element={<Publication />}>
+            <Route index element={<PublicationDashboard />} />
+            <Route path={'detail/:id'} element={<PublicationDetail />} />
+          </Route>
           <Route path={'/resource'} element={<Resources />} />
           <Route path={'/cohorts'} element={<Cohorts />} />
           <Route path={'/'} element={<Navigate to='/home' />} />

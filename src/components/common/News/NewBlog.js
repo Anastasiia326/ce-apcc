@@ -7,13 +7,13 @@ function NewBlog(props) {
 
   const Trigger = ({ title, imgPath, opend }) => {
     return (
-      <div className={`grid grid-cols-5 justify-between items-center py-5 px-16 ${opend?"bg-[#DDF3EA]":""}`}>
-        <div className="col-start-1 col-end-4">
-          <h4 className="text-black text-[35px] font-medium leading-[42px]">{title}</h4>
+      <div className={`grid grid-cols-1 sm:grid-cols-5 justify-between items-center py-5 px-6 md:px-16 ${opend?"bg-[#DDF3EA]":"bg-transparent"}`}>
+        <div className="col-span-3 xl:col-start-1 xl:col-end-4">
+          <h4 className="text-black text-2xl xl:text-[35px] text-center sm:text-center font-medium leading-[30px] xl:leading-[42px]">{title}</h4>
         </div>
-        <div className="col-end-6 col-span-1 flex justify-between">
-          <img src={imgPath} alt="Blog Image" className="rounded-lg" />
-          <button>{opend?<HiMinus className="text-[#1BAE70] text-3xl " />:<HiPlus className="text-[#1BAE70] text-3xl " />}</button>
+        <div className="col-span-2 xl:col-end-6 xl:col-span-1 flex justify-around">
+          <img src={imgPath} alt="Blog Image" className="rounded-lg w-[80%] sm:w-auto my-4 sm:my-0" />
+          <button className="hidden md:block">{opend?<HiMinus className="text-[#1BAE70] text-3xl " />:<HiPlus className="text-[#1BAE70] text-3xl " />}</button>
         </div>
       </div>
     )
@@ -27,7 +27,7 @@ function NewBlog(props) {
         trigger={<Trigger title={props.title} imgPath={props.imgPath} opend={opend} />}
         easing="cubic-bezier(0.2, 0.1, 0.2, 1)"
       >
-        <div className="p-16">
+        <div className="p-8 sm:p-16">
           {props.children}
         </div>
       </Collapsible>
